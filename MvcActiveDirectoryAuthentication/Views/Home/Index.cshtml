@@ -1,0 +1,54 @@
+﻿@{
+    Layout = null;
+}
+@using MvcActiveDirectoryAuthentication.Helpers
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Logged in</title>
+</head>
+<body>
+    <div>
+        You are logged in now !!
+        @*@Html.RenderZone(new List<Widget>() { 
+            new Widget() 
+            { 
+                WidgetOrder = 1, 
+                Model = new ObjectModel1(){ Name = "Object Model 1"} , 
+                WidgetPartialView = "View1" 
+            }, new Widget() 
+            { 
+                WidgetOrder = 2, 
+                Model = new ObjectModel2(){ Name = "Object Model 2"} , 
+                WidgetPartialView = "View2" 
+            }, new Widget() 
+            { 
+                WidgetOrder = 3, 
+                Model = new ObjectModel3(){ Name = "Object Model 3"} , 
+                WidgetPartialView = "View3" 
+            }
+        }, ViewContext)*@
+
+        @Html.RenderZoneParallel(new List<Widget>() {
+            new Widget()
+            {
+                WidgetOrder = 1,
+                Model = new ObjectModel1(){ Name = "Object Model 1"} ,
+                WidgetPartialView = "View1"
+            }, new Widget()
+            {
+                WidgetOrder = 2,
+                Model = new ObjectModel2(){ Name = "Object Model 2"} ,
+                WidgetPartialView = "View2"
+            }, new Widget()
+            {
+                WidgetOrder = 3,
+                Model = new ObjectModel3(){ Name = "Object Model 3"} ,
+                WidgetPartialView = "View3"
+            }
+        }, ViewContext)
+    </div>
+</body>
+</html>
