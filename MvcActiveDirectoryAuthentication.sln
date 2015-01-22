@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcActiveDirectoryAuthentication", "MvcActiveDirectoryAuthentication\MvcActiveDirectoryAuthentication.csproj", "{CA1446A4-A5E9-4668-B191-85EA17C50CF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCActiveDirectoryAuthentication.Services", "MVCActiveDirectoryAuthentication.Services\MVCActiveDirectoryAuthentication.Services.csproj", "{4E7318A1-CF1B-4B18-B856-11C5B850C456}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CA1446A4-A5E9-4668-B191-85EA17C50CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA1446A4-A5E9-4668-B191-85EA17C50CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA1446A4-A5E9-4668-B191-85EA17C50CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E7318A1-CF1B-4B18-B856-11C5B850C456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E7318A1-CF1B-4B18-B856-11C5B850C456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E7318A1-CF1B-4B18-B856-11C5B850C456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E7318A1-CF1B-4B18-B856-11C5B850C456}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

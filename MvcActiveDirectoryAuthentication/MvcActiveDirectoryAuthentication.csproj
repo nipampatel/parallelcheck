@@ -132,9 +132,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\AuthenticationHelper.cs" />
     <Compile Include="Helpers\HtmlRenderHelper.cs" />
-    <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -232,6 +230,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MVCActiveDirectoryAuthentication.Services\MVCActiveDirectoryAuthentication.Services.csproj">
+      <Project>{4e7318a1-cf1b-4b18-b856-11c5b850c456}</Project>
+      <Name>MVCActiveDirectoryAuthentication.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

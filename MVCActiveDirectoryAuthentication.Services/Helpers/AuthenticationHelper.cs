@@ -6,7 +6,7 @@ using System.DirectoryServices;
 using System.Linq;
 using System.Web;
 
-namespace MvcActiveDirectoryAuthentication.Helpers
+namespace MVCActiveDirectoryAuthentication.Services
 {
     public class AuthenticationHelper
     {
